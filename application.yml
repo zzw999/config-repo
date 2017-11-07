@@ -6,4 +6,11 @@ spring:
       enabled: false
 server:
   tomcat:
-    uri-encoding: UTF-8      
+    uri-encoding: UTF-8
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://localhost:8887/discovery/eureka
+  instance:
+    healthCheckUrlPath: ${server.context-path}/health
+    statusPageUrlPath: ${server.context-path}/info    
