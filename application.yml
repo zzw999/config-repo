@@ -1,0 +1,9 @@
+logging:
+  config: classpath:log/logback.xml
+spring:
+  devtools:
+    restart:
+      enabled: false
+server:
+  tomcat:
+    uri-encoding: UTF-8      
