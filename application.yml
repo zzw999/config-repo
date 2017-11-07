@@ -4,13 +4,19 @@ spring:
   devtools:
     restart:
       enabled: false
+  cloud:
+    config:
+      uri: http://localhost:8888/config/    
 server:
   tomcat:
     uri-encoding: UTF-8
 eureka:
-  client:
-    serviceUrl:
-       defaultZone: http://localhost:8887/discovery/eureka
   instance:
     healthCheckUrlPath: ${server.context-path}/health
-    statusPageUrlPath: ${server.context-path}/info    
+    statusPageUrlPath: ${server.context-path}/info   
+    hostname: localhost
+  dashboard:
+    path: /
+  client:
+    serviceUrl:
+       defaultZone: http://${eureka.instance.hostname}:${server.port}/discovery/eureka/  
