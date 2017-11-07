@@ -11,8 +11,6 @@ eureka:
   instance:
     healthCheckUrlPath: ${server.context-path}/health
     statusPageUrlPath: ${server.context-path}/info   
-  dashboard:
-    path: /
   client:
     serviceUrl:
        defaultZone: http://localhost:8887/discovery/eureka/  
