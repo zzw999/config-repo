@@ -1,12 +1,11 @@
+discovery:
+  port: 8887
 logging:
   config: classpath:log/logback.xml
 spring:
   devtools:
     restart:
       enabled: false
-  cloud:
-    config:
-      uri: http://localhost:8888/config/    
 server:
   tomcat:
     uri-encoding: UTF-8
@@ -19,4 +18,4 @@ eureka:
     path: /
   client:
     serviceUrl:
-       defaultZone: http://${eureka.instance.hostname}:${server.port}/discovery/eureka/  
+       defaultZone: http://${eureka.instance.hostname}:${discovery.port}/discovery/eureka/  
