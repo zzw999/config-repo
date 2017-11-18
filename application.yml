@@ -13,4 +13,4 @@ eureka:
       statusPageUrlPath: ${server.context-path}/info
   client:
     serviceUrl:
-      defaultZone: http://localhost:8887/discovery/eureka/    
+      defaultZone: http://localhost:8882/discovery/eureka/    
