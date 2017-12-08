@@ -1,0 +1,17 @@
+logging:
+  config: classpath:log/logback.xml
+spring:
+  devtools:
+    restart:
+      enabled: false
+server:
+  tomcat:
+    uri-encoding: UTF-8
+eureka:
+  instance:
+      healthCheckUrlPath: ${server.context-path}/health
+      statusPageUrlPath: ${server.context-path}/info
+      prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.0.9:8882/discovery/eureka/    
