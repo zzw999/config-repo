@@ -3,7 +3,7 @@ logging:
 spring:
   devtools:
     restart:
-      enabled: false
+      enabled: true
 server:
   tomcat:
     uri-encoding: UTF-8
