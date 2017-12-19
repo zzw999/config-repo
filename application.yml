@@ -1,0 +1,27 @@
+logging:
+  config: classpath:log/logback.xml
+spring:
+  devtools:
+    restart:
+      enabled: true
+server:
+  tomcat:
+    uri-encoding: UTF-8
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 3
+  OkToRetryOnAllOperations: true
+  ConnectTimeout: 1500
+  ReadTimeout: 2000
+eureka:
+  instance:
+    metadata-map:
+      cluster: prontera
+      management:
+        port: ${management.port}
+        context-path: ${management.context-path}
+      health:
+        path: ${management.context-path}/health
+    status-page-url-path: ${management.context-path}/info
+    health-check-url-path: ${management.context-path}/health
+    prefer-ip-address: true
