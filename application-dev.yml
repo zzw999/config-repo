@@ -21,4 +21,4 @@ eureka:
     prefer-ip-address: false
   client:
     serviceUrl:
-      defaultZone: http://discoverymaster:8882/eureka/,http://discoveryback:8883/eureka/    
+      defaultZone: http://localhost:8882/discovery/eureka/ 
