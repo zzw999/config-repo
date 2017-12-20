@@ -15,16 +15,13 @@ ribbon:
   ReadTimeout: 2000
 eureka:
   instance:
-    metadata-map:
-      cluster: prontera
-      management:
-        port: ${management.port}
-        context-path: ${management.context-path}
-      health:
-        path: ${management.context-path}/health
+    #metadata-map:
+    #  cluster: prontera
+    #  management:
+    #    port: ${management.port}
+    #    context-path: ${management.context-path}
+    #  health:
+    #    path: ${management.context-path}/health
     status-page-url-path: ${management.context-path}/info
     health-check-url-path: ${management.context-path}/health
     prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://discoverymaster:8882/eureka/,http://discoverybackup:8883/eureka/
