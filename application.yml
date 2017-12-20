@@ -25,3 +25,6 @@ eureka:
     status-page-url-path: ${management.context-path}/info
     health-check-url-path: ${management.context-path}/health
     prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8882/discovery/eureka/
