@@ -7,12 +7,12 @@ spring:
 server:
   tomcat:
     uri-encoding: UTF-8
-ribbon:
-  MaxAutoRetries: 1
-  MaxAutoRetriesNextServer: 3
-  OkToRetryOnAllOperations: true
-  ConnectTimeout: 1500
-  ReadTimeout: 2000
+#ribbon:
+#  MaxAutoRetries: 1
+#  MaxAutoRetriesNextServer: 3
+#  OkToRetryOnAllOperations: true
+#  ConnectTimeout: 1500
+#  ReadTimeout: 2000
 eureka:
   instance:
     #metadata-map:
