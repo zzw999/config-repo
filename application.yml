@@ -13,8 +13,8 @@ server:
 #  OkToRetryOnAllOperations: true
 #  ConnectTimeout: 1500
 #  ReadTimeout: 2000
-eureka:
-  instance:
+#eureka:
+#  instance:
     #metadata-map:
     #  cluster: prontera
     #  management:
@@ -22,6 +22,6 @@ eureka:
     #    context-path: ${management.context-path}
     #  health:
     #    path: ${management.context-path}/health
-    status-page-url-path: ${management.context-path}/info
-    health-check-url-path: ${management.context-path}/health
-    prefer-ip-address: false
+#    status-page-url-path: ${management.context-path}/info
+#    health-check-url-path: ${management.context-path}/health
+#    prefer-ip-address: false
